@@ -68,7 +68,7 @@ class Auteur{
             $result = "<h1>Livre de $this</h1>";
 
             foreach($this->livres as $livre){
-                $result .= $livre."<br>";
+                $result .= $livre->getInfos();
             }
 
             return $result;

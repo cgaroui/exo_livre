@@ -89,7 +89,7 @@ class Livre{
     }
 
     public function getInfos(){
-        return $this->getTitre()."(".$this->getAnnee().") pages / ".$this->getPrix()." €<br>";
+        return $this->getTitre()."(".$this->getAnnee().")".$this->getNbPage(). " pages / ".$this->getPrix()." €<br>";
     }
 
 

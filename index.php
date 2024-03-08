@@ -13,7 +13,8 @@ $livre3 = new Livre("CLe Fléau", 1978, 823, 14,$auteur1);
 $livre4 = new Livre("shinning", 1977, 447, 16,$auteur1);
 
 
- echo $livre1->getInfos();
+ //echo $livre1->getInfos();
 // echo $auteur1;
 
-//echo $auteur1->afficherLivres();
+echo $auteur1->afficherLivres();
+
