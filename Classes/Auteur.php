@@ -67,7 +67,7 @@ class Auteur{
         public function afficherLivres(){
             $result = "<h1>Livre de $this</h1>";
 
-            foreach($this->livres as $livre){
+            foreach($this->livres as $livre){   // boucle permettant d'afficher une liste de livres et les infos necessaire(grace à la fonction getInfo) de l'auteur en question (dans this )
                 $result .= $livre->getInfos();
             }
 
@@ -76,7 +76,7 @@ class Auteur{
 
         public function __toString()
         {
-            return $this->nom." ".$this->prenom;
+            return $this->nom." ".$this->prenom; // nous affiche a chaque fois le nom et le prenom 
           
         }
 }
